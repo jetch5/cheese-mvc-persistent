@@ -18,7 +18,9 @@
 
                     <select name="cheeseId">
 
-                        <option th:each"cheese: *{cheeses}" th:value="${cheese.id}" th:text="${cheese.name}"></option>
+                        <option th:each="cheese: *{cheeses}"
+                        th:text="${cheese.name}"
+                        th:value="${cheese.id}"></option>
 
                     </select>
 
@@ -27,7 +29,7 @@
                 </div>
 
 
-                <input type="submit" value="Add" />
+                <input type="submit" value="Add Item" />
 
             </form>
 
